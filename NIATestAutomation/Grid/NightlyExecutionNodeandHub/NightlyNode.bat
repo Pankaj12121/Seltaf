@@ -1,0 +1,2 @@
+cd d:\NightlyExecutionNodeandHub\grid
+java -jar selenium-server-standalone-2.53.0.jar -role node -nodeConfig NodeJenkins.json -hubUrl http://10.13.13.82:4444/grid/register -Dwebdriver.ie.driver="D:\NIATestAutomation\Grid\chromedriver.exe"

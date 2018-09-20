@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ScenarioResultObject.java&apos; to &apos;seltaf/src/com.aqm.staf.framework.core.scenarioResult&apos;&#x0D;&#x0A;- Original project: &apos;seltaf&apos;&#x0D;&#x0A;- Destination element: &apos;seltaf/src/com.aqm.staf.framework.core.scenarioResult&apos;&#x0D;&#x0A;- Original element: &apos;com.aqm.staf.framework.core.scenarioResult.ScenarioResultObject.java&apos;" description="Copy compilation unit" destination="/src&lt;com.aqm.staf.framework.core.scenarioResult" element1="/src&lt;com.aqm.staf.framework.core.scenarioResult{ScenarioResultObject.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1475221591907" units="1" version="1.0"/>
+</session>

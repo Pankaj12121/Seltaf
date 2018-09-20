@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+	<class abstract="false" name="com.aqm.staf.library.databin.RiskDetIARPolFireEntity" table="RiskDetIARPolFireEntity">
+		<id name="Reference" column="Reference" type="string">
+		</id>
+		<property name="TestScenario" column="TestScenario" type="string" />
+		<property name="RowNumber" column="RowNumber" type="integer" />
+		<property name="Action" column="Action" type="string" />
+		<property name="StepGroup" column="StepGroup" type="string" />
+		<property name="ParentKey" column="ParentKey" type="string" />
+		<property name="ChildKey" column="ChildKey" type="string" />
+		<property name="ConfigExecute" column="ConfigExecute" type="string" />
+		<dynamic-component insert="true" name="customProperties" optimistic-lock="true" unique="false" update="true">
+			<property name="LOB" column="LOB" type="string" />
+			<property name="Product" column="Product" type="string" />
+			<property name="NextPageTitle" column="NextPageTitle" type="string" />
+			<property name="ConfigQuoteNo" column="ConfigQuoteNo" type="boolean" />
+			<property name="QuoteNo" column="QuoteNo" type="string" />
+			<property name="ConfigStatus" column="ConfigStatus" type="boolean" />
+			<property name="Status" column="Status" type="string" />
+			<property name="ConfigPolicyHolderName" column="ConfigPolicyHolderName" type="boolean" />
+			<property name="PolicyHolderName" column="PolicyHolderName" type="string" />
+			<property name="ConfigProductName" column="ConfigProductName" type="boolean" />
+			<property name="ProductName" column="ProductName" type="string" />
+			<property name="ConfigInsuredInterestCode" column="ConfigInsuredInterestCode" type="boolean" />
+			<property name="InsuredInterestCode" column="InsuredInterestCode" type="string" />
+			<property name="ConfigInsuredInterestSerialNo" column="ConfigInsuredInterestSerialNo" type="boolean" />
+			<property name="InsuredInterestSerialNo" column="InsuredInterestSerialNo" type="string" />
+			<property name="ConfigYearOfConstruction" column="ConfigYearOfConstruction" type="boolean" />
+			<property name="YearOfConstruction" column="YearOfConstruction" type="string" />
+			<property name="ConfigYearOfOccupation" column="ConfigYearOfOccupation" type="boolean" />
+			<property name="YearOfOccupation" column="YearOfOccupation" type="string" />
+			<property name="ConfigIsTheEntireRiskLocatedInTheBasement" column="ConfigIsTheEntireRiskLocatedInTheBasement" type="boolean" />
+			<property name="IsTheEntireRiskLocatedInTheBasement" column="IsTheEntireRiskLocatedInTheBasement" type="string" />
+			<property name="ConfigIfThereIsPartialBasementHowTheSameIsOccupied" column="ConfigIfThereIsPartialBasementHowTheSameIsOccupied" type="boolean" />
+			<property name="IfThereIsPartialBasementHowTheSameIsOccupied" column="IfThereIsPartialBasementHowTheSameIsOccupied" type="string" />
+			<property name="ConfigDetailsOfFireFightingArrangementsForTheRisk" column="ConfigDetailsOfFireFightingArrangementsForTheRisk" type="boolean" />
+			<property name="DetailsOfFireFightingArrangementsForTheRisk" column="DetailsOfFireFightingArrangementsForTheRisk" type="string" />
+			<property name="ConfigDistanceFromTheNearestPublicFireBrigade" column="ConfigDistanceFromTheNearestPublicFireBrigade" type="boolean" />
+			<property name="DistanceFromTheNearestPublicFireBrigade" column="DistanceFromTheNearestPublicFireBrigade" type="string" />
+			<property name="ConfigApproximateResponseTimeForTheFireBrigadeInMinutes" column="ConfigApproximateResponseTimeForTheFireBrigadeInMinutes" type="boolean" />
+			<property name="ApproximateResponseTimeForTheFireBrigadeInMinutes" column="ApproximateResponseTimeForTheFireBrigadeInMinutes" type="string" />
+			<property name="ConfigWhetherTheRiskIsSituatedInSEZ" column="ConfigWhetherTheRiskIsSituatedInSEZ" type="boolean" />
+			<property name="WhetherTheRiskIsSituatedInSEZ" column="WhetherTheRiskIsSituatedInSEZ" type="string" />
+			<property name="ConfigWhetherRiskIsInspectedByRiskEngineerOutsourcedAgencyAndDetailedReportIsOnRecords" column="ConfigWhetherRiskIsInspectedByRiskEngineerOutsourcedAgencyAndDetailedReportIsOnRecords" type="boolean" />
+			<property name="WhetherRiskIsInspectedByRiskEngineerOutsourcedAgencyAndDetailedReportIsOnRecords" column="WhetherRiskIsInspectedByRiskEngineerOutsourcedAgencyAndDetailedReportIsOnRecords" type="string" />
+			<property name="ConfigDateOfInspection" column="ConfigDateOfInspection" type="boolean" />
+			<property name="DateOfInspection" column="DateOfInspection" type="string" />
+			<property name="ConfigSpecifyNeighboringRiskOccupancy" column="ConfigSpecifyNeighboringRiskOccupancy" type="boolean" />
+			<property name="SpecifyNeighboringRiskOccupancy" column="SpecifyNeighboringRiskOccupancy" type="string" />
+			<property name="ConfigIsTheNeighboringRiskClearlySeparatedByRoadORVacantLand" column="ConfigIsTheNeighboringRiskClearlySeparatedByRoadORVacantLand" type="boolean" />
+			<property name="IsTheNeighboringRiskClearlySeparatedByRoadORVacantLand" column="IsTheNeighboringRiskClearlySeparatedByRoadORVacantLand" type="string" />
+			<property name="ConfigProbableMaximumLossPML" column="ConfigProbableMaximumLossPML" type="boolean" />
+			<property name="ProbableMaximumLossPML" column="ProbableMaximumLossPML" type="string" />
+			<property name="ConfigTypeOfConstruction" column="ConfigTypeOfConstruction" type="boolean" />
+			<property name="TypeOfConstruction" column="TypeOfConstruction" type="string" />
+			<property name="ConfigHeightOfTheBuildingMeters" column="ConfigHeightOfTheBuildingMeters" type="boolean" />
+			<property name="HeightOfTheBuildingMeters" column="HeightOfTheBuildingMeters" type="string" />
+			<property name="ConfigAgeOfTheBuildingYears" column="ConfigAgeOfTheBuildingYears" type="boolean" />
+			<property name="AgeOfTheBuildingYears" column="AgeOfTheBuildingYears" type="string" />
+			<property name="ConfigPortableExtinguishers" column="ConfigPortableExtinguishers" type="boolean" />
+			<property name="PortableExtinguishers" column="PortableExtinguishers" type="string" />
+			<property name="ConfigSmallBoreHoseReels" column="ConfigSmallBoreHoseReels" type="boolean" />
+			<property name="SmallBoreHoseReels" column="SmallBoreHoseReels" type="string" />
+			<property name="ConfigTrailerPumpsFireEngines" column="ConfigTrailerPumpsFireEngines" type="boolean" />
+			<property name="TrailerPumpsFireEngines" column="TrailerPumpsFireEngines" type="string" />
+			<property name="ConfigHydrantSystem" column="ConfigHydrantSystem" type="boolean" />
+			<property name="HydrantSystem" column="HydrantSystem" type="string" />
+			<property name="ConfigSprinklerSystemFire" column="ConfigSprinklerSystemFire" type="boolean" />
+			<property name="SprinklerSystemFire" column="SprinklerSystemFire" type="string" />
+			<property name="ConfigFixedWaterSpraySystem" column="ConfigFixedWaterSpraySystem" type="boolean" />
+			<property name="FixedWaterSpraySystem" column="FixedWaterSpraySystem" type="string" />
+			<property name="ConfigFoamSystems" column="ConfigFoamSystems" type="boolean" />
+			<property name="FoamSystems" column="FoamSystems" type="string" />
+			<property name="ConfigFireAlarmSystems" column="ConfigFireAlarmSystems" type="boolean" />
+			<property name="FireAlarmSystems" column="FireAlarmSystems" type="string" />
+			<property name="ConfigGasFloodingSystems" column="ConfigGasFloodingSystems" type="boolean" />
+			<property name="GasFloodingSystems" column="GasFloodingSystems" type="string" />
+			<property name="ConfigSpotProtection" column="ConfigSpotProtection" type="boolean" />
+			<property name="SpotProtection" column="SpotProtection" type="string" />
+			<property name="ConfigOtherProtectionNotSpecifiedAbove" column="ConfigOtherProtectionNotSpecifiedAbove" type="boolean" />
+			<property name="OtherProtectionNotSpecifiedAbove" column="OtherProtectionNotSpecifiedAbove" type="string" />
+			<property name="ConfigPleaseProvideTheFireProtectionDetails" column="ConfigPleaseProvideTheFireProtectionDetails" type="boolean" />
+			<property name="PleaseProvideTheFireProtectionDetails" column="PleaseProvideTheFireProtectionDetails" type="string" />
+			<property name="ConfigElectricalRegulation" column="ConfigElectricalRegulation" type="boolean" />
+			<property name="ElectricalRegulation" column="ElectricalRegulation" type="string" />
+			<property name="ConfigHazardousGoodsForShops" column="ConfigHazardousGoodsForShops" type="boolean" />
+			<property name="HazardousGoodsForShops" column="HazardousGoodsForShops" type="string" />
+			<property name="ConfigBackButton" column="ConfigBackButton" type="boolean" />
+			<property name="ConfigBackwardButton" column="ConfigBackwardButton" type="boolean" />
+			<property name="ConfigSaveButton" column="ConfigSaveButton" type="boolean" />
+			<property name="ConfigPolicyTab" column="ConfigPolicyTab" type="boolean" />
+			<property name="ConfigAttributeTab" column="ConfigAttributeTab" type="boolean" />
+			<property name="ConfigInsuredInterestTab" column="ConfigInsuredInterestTab" type="boolean" />
+			<property name="ConfigCoverageTab" column="ConfigCoverageTab" type="boolean" />
+			<property name="ConfigLoanTab" column="ConfigLoanTab" type="boolean" />
+			<property name="ConfigClientDetailsTab" column="ConfigClientDetailsTab" type="boolean" />
+			<property name="ConfigRelationTab" column="ConfigRelationTab" type="boolean" />
+			<property name="ConfigPaymentsTab" column="ConfigPaymentsTab" type="boolean" />
+			<property name="ConfigFollowupTab" column="ConfigFollowupTab" type="boolean" />
+			<property name="ConfigDocumentTab" column="ConfigDocumentTab" type="boolean" />
+			<property name="ConfigMemberDetail" column="ConfigMemberDetail" type="boolean" />
+			<property name="ConfigMemberAttributes" column="ConfigMemberAttributes" type="boolean" />
+			<property name="ConfigMemberAttachCoverages" column="ConfigMemberAttachCoverages" type="boolean" />
+			<property name="ConfigMemberRelations" column="ConfigMemberRelations" type="boolean" />
+			<property name="ConfigMemberPayments" column="ConfigMemberPayments" type="boolean" />
+			<property name="ConfigForwardButton" column="ConfigForwardButton" type="boolean" />
+		</dynamic-component>
+	</class>
+</hibernate-mapping>

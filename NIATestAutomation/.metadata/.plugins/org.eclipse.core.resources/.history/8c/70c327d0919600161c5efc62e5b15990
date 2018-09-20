@@ -1,0 +1,56 @@
+package com.aqm.staf.framework.core.scenarioResult;
+
+import java.util.ArrayList;
+
+public class ScenarioResultCollection {
+
+	public static ScenarioResultCollection instance=null;
+	public static ArrayList<ScenarioResultObject> listOfAllScenarioResult;
+
+
+	public static ArrayList<ScenarioResultObject> getListOfAllScenarioResult() {
+		return listOfAllScenarioResult;
+	}
+
+	public ScenarioResultCollection(){
+		if(listOfAllScenarioResult==null){
+			listOfAllScenarioResult= new ArrayList<ScenarioResultObject>();
+		}}
+
+	public static ScenarioResultCollection getInstance(){
+		if(instance==null){
+			instance=new ScenarioResultCollection();
+			return instance;
+		}
+		else{
+			return instance;
+		}
+	}
+int i=0;
+	public Boolean addIntoResultCollection(ScenarioResultObject obj){
+		i++;
+		if(obj instanceof ScenarioResultObject){
+			//for (int i=0;i<=listOfAllScenarioResult.size();i++){
+				if(listOfAllScenarioResult.get(0).getScenarioID().equals(obj.getScenarioID())){
+					listOfAllScenarioResult.get(0).setTypeOfFailure(obj.getTypeOfFailure());
+					listOfAllScenarioResult.get(0).setScenarioStatus(obj.getScenarioStatus());
+					listOfAllScenarioResult.get(0).setReasonIfFailed(obj.getReasonIfFailed());
+					//break;
+				}else{
+					return listOfAllScenarioResult.add(obj);
+				}
+			}
+			
+		//}
+		return false;
+	}
+
+	public Boolean addListResultCollection(ScenarioResultObject obj){
+		if(obj instanceof ScenarioResultObject){
+		return listOfAllScenarioResult.add(obj);
+				}
+			
+		return false;
+	}
+
+}

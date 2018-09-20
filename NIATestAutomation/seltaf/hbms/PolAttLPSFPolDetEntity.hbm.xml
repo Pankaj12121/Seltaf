@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+	<class abstract="false" name="com.aqm.staf.library.databin.PolAttLPSFPolDetEntity" table="PolAttLPSFPolDetEntity">
+		<id name="Reference" column="Reference" type="string">
+		</id>
+		<property name="TestScenario" column="TestScenario" type="string" />
+		<property name="RowNumber" column="RowNumber" type="integer" />
+		<property name="Action" column="Action" type="string" />
+		<property name="StepGroup" column="StepGroup" type="string" />
+		<property name="ParentKey" column="ParentKey" type="string" />
+		<property name="ChildKey" column="ChildKey" type="string" />
+		<property name="ConfigExecute" column="ConfigExecute" type="string" />
+		<dynamic-component insert="true" name="customProperties" optimistic-lock="true" unique="false" update="true">
+			<property name="LOB" column="LOB" type="string" />
+			<property name="Product" column="Product" type="string" />
+			<property name="EndorsementReason" column="EndorsementReason" type="string" />
+			<property name="ConfigStandardFirePolicyNumber" column="ConfigStandardFirePolicyNumber" type="boolean" />
+			<property name="StandardFirePolicyNumber" column="StandardFirePolicyNumber" type="string" />
+			<property name="ConfigStandardFirePolicyInceptionDate" column="ConfigStandardFirePolicyInceptionDate" type="boolean" />
+			<property name="StandardFirePolicyInceptionDate" column="StandardFirePolicyInceptionDate" type="string" />
+			<property name="ConfigStandardFirePolicyExpiryDate" column="ConfigStandardFirePolicyExpiryDate" type="boolean" />
+			<property name="StandardFirePolicyExpiryDate" column="StandardFirePolicyExpiryDate" type="string" />
+			<property name="ConfigIssuingCompany" column="ConfigIssuingCompany" type="boolean" />
+			<property name="IssuingCompany" column="IssuingCompany" type="string" />
+			<property name="ConfigToConfirmThatCovUnderBIPolIsNotExtThanTheCorrMDPolicy" column="ConfigToConfirmThatCovUnderBIPolIsNotExtThanTheCorrMDPolicy" type="boolean" />
+			<property name="ToConfirmThatCovUnderBIPolIsNotExtThanTheCorrMDPolicy" column="ToConfirmThatCovUnderBIPolIsNotExtThanTheCorrMDPolicy" type="string" />
+			<property name="ConfigWhetherSTFIInCorrMDPolicyIsExcluded" column="ConfigWhetherSTFIInCorrMDPolicyIsExcluded" type="boolean" />
+			<property name="WhetherSTFIInCorrMDPolicyIsExcluded" column="WhetherSTFIInCorrMDPolicyIsExcluded" type="string" />
+			<property name="ConfigWhetherRSMDInCorrMDPolicyIsExcluded" column="ConfigWhetherRSMDInCorrMDPolicyIsExcluded" type="boolean" />
+			<property name="WhetherRSMDInCorrMDPolicyIsExcluded" column="WhetherRSMDInCorrMDPolicyIsExcluded" type="string" />
+			<property name="ConfigForwordButton" column="ConfigForwordButton" type="boolean" />
+			<property name="ConfigPreviousButton" column="ConfigPreviousButton" type="boolean" />
+			<property name="ConfigBackButton" column="ConfigBackButton" type="boolean" />
+			<property name="ConfigPolicyTab" column="ConfigPolicyTab" type="boolean" />
+			<property name="ConfigAttributeTab" column="ConfigAttributeTab" type="boolean" />
+			<property name="ConfigMemberTab" column="ConfigMemberTab" type="boolean" />
+			<property name="ConfigCoverageTab" column="ConfigCoverageTab" type="boolean" />
+			<property name="ConfigLoanTab" column="ConfigLoanTab" type="boolean" />
+			<property name="ConfigClientDetailsTab" column="ConfigClientDetailsTab" type="boolean" />
+			<property name="ConfigRelationTab" column="ConfigRelationTab" type="boolean" />
+			<property name="ConfigPaymentsTab" column="ConfigPaymentsTab" type="boolean" />
+			<property name="ConfigFollowupTab" column="ConfigFollowupTab" type="boolean" />
+			<property name="ConfigDocumentTab" column="ConfigDocumentTab" type="boolean" />
+		</dynamic-component>
+	</class>
+</hibernate-mapping>

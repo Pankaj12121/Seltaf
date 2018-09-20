@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+	<class abstract="false" name="com.aqm.staf.library.databin.FirePEAddOnCovEnity" table="FirePEAddOnCovEnity">
+		<id name="Reference" column="Reference" type="string">
+		</id>
+		<property name="TestScenario" column="TestScenario" type="string" />
+		<property name="RowNumber" column="RowNumber" type="integer" />
+		<property name="Action" column="Action" type="string" />
+		<property name="StepGroup" column="StepGroup" type="string" />
+		<property name="ParentKey" column="ParentKey" type="string" />
+		<property name="ChildKey" column="ChildKey" type="string" />
+		<property name="ConfigExecute" column="ConfigExecute" type="string" />
+		<dynamic-component insert="true" name="customProperties" optimistic-lock="true" unique="false" update="true">
+			<property name="LOB" column="LOB" type="string" />
+			<property name="Product" column="Product" type="string" />
+			<property name="NextPageTitle" column="NextPageTitle" type="string" />
+			<property name="ConfigQuoteNo" column="ConfigQuoteNo" type="boolean" />
+			<property name="QuoteNo" column="QuoteNo" type="string" />
+			<property name="ConfigStatus" column="ConfigStatus" type="boolean" />
+			<property name="Status" column="Status" type="string" />
+			<property name="ConfigPolicyHolderName" column="ConfigPolicyHolderName" type="boolean" />
+			<property name="PolicyHolderName" column="PolicyHolderName" type="string" />
+			<property name="ConfigProductName" column="ConfigProductName" type="boolean" />
+			<property name="ProductName" column="ProductName" type="string" />
+			<property name="ConfigInadvertomsnDropdown" column="ConfigInadvertomsnDropdown" type="boolean" />
+			<property name="InadvertomsnDropdown" column="InadvertomsnDropdown" type="string" />
+			<property name="ConfigSiforInadTextField" column="ConfigSiforInadTextField" type="boolean" />
+			<property name="SiforInadTextField" column="SiforInadTextField" type="string" />
+			<property name="ConfigPremForInadrOmsnTextField" column="ConfigPremForInadrOmsnTextField" type="boolean" />
+			<property name="PremForInadrOmsnTextField" column="PremForInadrOmsnTextField" type="string" />
+			<property name="ConfigArchAndConsEngFeesDropdown" column="ConfigArchAndConsEngFeesDropdown" type="boolean" />
+			<property name="ArchAndConsEngFeesDropdown" column="ArchAndConsEngFeesDropdown" type="string" />
+			<property name="ConfigSIForArchAndConsultantEngFeesTextField" column="ConfigSIForArchAndConsultantEngFeesTextField" type="boolean" />
+			<property name="SIForArchAndConsultantEngFeesTextField" column="SIForArchAndConsultantEngFeesTextField" type="string" />
+			<property name="ConfigPremForArchAndConsEngFeesTextField" column="ConfigPremForArchAndConsEngFeesTextField" type="boolean" />
+			<property name="PremForArchAndConsEngFeesTextField" column="PremForArchAndConsEngFeesTextField" type="string" />
+			<property name="ConfigRemOfDebPetchemDropdown" column="ConfigRemOfDebPetchemDropdown" type="boolean" />
+			<property name="RemOfDebPetchemDropdown" column="RemOfDebPetchemDropdown" type="string" />
+			<property name="ConfigSIForRemOfDebPetchemTextField" column="ConfigSIForRemOfDebPetchemTextField" type="boolean" />
+			<property name="SIForRemOfDebPetchemTextField" column="SIForRemOfDebPetchemTextField" type="string" />
+			<property name="ConfigPremForRemOfDebPetchemTextField" column="ConfigPremForRemOfDebPetchemTextField" type="boolean" />
+			<property name="PremForRemOfDebPetchemTextField" column="PremForRemOfDebPetchemTextField" type="string" />
+			<property name="ConfigSaveButton" column="ConfigSaveButton" type="boolean" />
+			<property name="ConfigForwordButton" column="ConfigForwordButton" type="boolean" />
+			<property name="ConfigBackButton" column="ConfigBackButton" type="boolean" />
+			<property name="ConfigPreviousButton" column="ConfigPreviousButton" type="boolean" />
+		</dynamic-component>
+	</class>
+</hibernate-mapping>

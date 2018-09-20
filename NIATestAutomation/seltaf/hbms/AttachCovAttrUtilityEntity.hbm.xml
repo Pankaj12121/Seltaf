@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+	<class abstract="false" name="com.aqm.staf.library.databin.AttachCovAttrUtilityEntity" table="AttachCovAttrUtilityEntity">
+		<id name="Reference" column="Reference" type="string">
+		</id>
+		<property name="TestScenario" column="TestScenario" type="string" />
+		<property name="RowNumber" column="RowNumber" type="integer" />
+		<property name="Action" column="Action" type="string" />
+		<property name="StepGroup" column="StepGroup" type="string" />
+		<property name="ParentKey" column="ParentKey" type="string" />
+		<property name="ChildKey" column="ChildKey" type="string" />
+		<property name="ConfigExecute" column="ConfigExecute" type="string" />
+		<dynamic-component insert="true" name="customProperties" optimistic-lock="true" unique="false" update="true">
+			<property name="LOB" column="LOB" type="string" />
+			<property name="Product" column="Product" type="string" />
+			<property name="NextPageTitle" column="NextPageTitle" type="string" />
+			<property name="ConfigIsCoverrequiredForUtilityWater" column="ConfigIsCoverrequiredForUtilityWater" type="boolean" />
+			<property name="IsCoverrequiredForUtilityWater" column="IsCoverrequiredForUtilityWater" type="string" />
+			<property name="ConfigSIForUtilityWater" column="ConfigSIForUtilityWater" type="boolean" />
+			<property name="SIForUtilityWater" column="SIForUtilityWater" type="string" />
+			<property name="ConfigNetPremiumforUtilityWater" column="ConfigNetPremiumforUtilityWater" type="boolean" />
+			<property name="NetPremiumforUtilityWater" column="NetPremiumforUtilityWater" type="string" />
+			<property name="ConfigIsCoverrequiredForUtilityAir" column="ConfigIsCoverrequiredForUtilityAir" type="boolean" />
+			<property name="IsCoverrequiredForUtilityAir" column="IsCoverrequiredForUtilityAir" type="string" />
+			<property name="ConfigSIForUtilityAir" column="ConfigSIForUtilityAir" type="boolean" />
+			<property name="SIForUtilityAir" column="SIForUtilityAir" type="string" />
+			<property name="ConfigNetPremiumForUtilityAir" column="ConfigNetPremiumForUtilityAir" type="boolean" />
+			<property name="NetPremiumForUtilityAir" column="NetPremiumForUtilityAir" type="string" />
+			<property name="ConfigISCoverrequiredForUtilitySuppliersExtension" column="ConfigISCoverrequiredForUtilitySuppliersExtension" type="boolean" />
+			<property name="ISCoverrequiredForUtilitySuppliersExtension" column="ISCoverrequiredForUtilitySuppliersExtension" type="string" />
+			<property name="ConfigSIForUtilitySuppliersExtension" column="ConfigSIForUtilitySuppliersExtension" type="boolean" />
+			<property name="SIForUtilitySuppliersExtension" column="SIForUtilitySuppliersExtension" type="string" />
+			<property name="ConfigNetPremiumForUtilitySuppliersExtension" column="ConfigNetPremiumForUtilitySuppliersExtension" type="boolean" />
+			<property name="NetPremiumForUtilitySuppliersExtension" column="NetPremiumForUtilitySuppliersExtension" type="string" />
+			<property name="ConfigISCoverrequiredForUtilitySteam" column="ConfigISCoverrequiredForUtilitySteam" type="boolean" />
+			<property name="ISCoverrequiredForUtilitySteam" column="ISCoverrequiredForUtilitySteam" type="string" />
+			<property name="ConfigSIUtilitySteam" column="ConfigSIUtilitySteam" type="boolean" />
+			<property name="SIUtilitySteam" column="SIUtilitySteam" type="string" />
+			<property name="ConfigNetPremiumForUtilitySteam" column="ConfigNetPremiumForUtilitySteam" type="boolean" />
+			<property name="NetPremiumForUtilitySteam" column="NetPremiumForUtilitySteam" type="string" />
+			<property name="ConfigPolicyTab" column="ConfigPolicyTab" type="boolean" />
+			<property name="ConfigAttributeTab" column="ConfigAttributeTab" type="boolean" />
+			<property name="ConfigInsuredInterestTab" column="ConfigInsuredInterestTab" type="boolean" />
+			<property name="ConfigCoverageTab" column="ConfigCoverageTab" type="boolean" />
+			<property name="ConfigLoanTab" column="ConfigLoanTab" type="boolean" />
+			<property name="ConfigClientDetailsTab" column="ConfigClientDetailsTab" type="boolean" />
+			<property name="ConfigRelationTab" column="ConfigRelationTab" type="boolean" />
+			<property name="ConfigPaymentsTab" column="ConfigPaymentsTab" type="boolean" />
+			<property name="ConfigFollowupTab" column="ConfigFollowupTab" type="boolean" />
+			<property name="ConfigDocumentTab" column="ConfigDocumentTab" type="boolean" />
+			<property name="ConfigMemberDetail" column="ConfigMemberDetail" type="boolean" />
+			<property name="ConfigMemberAttributes" column="ConfigMemberAttributes" type="boolean" />
+			<property name="ConfigMemberAttachCoverages" column="ConfigMemberAttachCoverages" type="boolean" />
+			<property name="ConfigMemberRelations" column="ConfigMemberRelations" type="boolean" />
+			<property name="ConfigMemberPayments" column="ConfigMemberPayments" type="boolean" />
+			<property name="ConfigAttachCoverageDetailsTab" column="ConfigAttachCoverageDetailsTab" type="boolean" />
+			<property name="ConfigAttachCoverageAttributesTab" column="ConfigAttachCoverageAttributesTab" type="boolean" />
+			<property name="ConfigAttachCoveragePremiumTab" column="ConfigAttachCoveragePremiumTab" type="boolean" />
+			<property name="ConfigCapitalAdditionWithinLimit" column="ConfigCapitalAdditionWithinLimit" type="boolean" />
+			<property name="CapitalAdditionWithinLimit" column="CapitalAdditionWithinLimit" type="string" />
+			<property name="ConfigCapitalAdditionAboveLimit" column="ConfigCapitalAdditionAboveLimit" type="boolean" />
+			<property name="CapitalAdditionAboveLimit" column="CapitalAdditionAboveLimit" type="string" />
+			<property name="ConfigManualGrossPremium" column="ConfigManualGrossPremium" type="boolean" />
+			<property name="ManualGrossPremium" column="ManualGrossPremium" type="string" />
+			<property name="ConfigSaveButton" column="ConfigSaveButton" type="boolean" />
+			<property name="ConfigForwardButton" column="ConfigForwardButton" type="boolean" />
+		</dynamic-component>
+	</class>
+</hibernate-mapping>

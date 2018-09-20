@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+	<class abstract="false" name="com.aqm.staf.library.databin.InterPeriodInDaysEntity" table="InterPeriodInDaysEntity">
+		<id name="Reference" column="Reference" type="string">
+		</id>
+		<property name="TestScenario" column="TestScenario" type="string" />
+		<property name="RowNumber" column="RowNumber" type="integer" />
+		<property name="Action" column="Action" type="string" />
+		<property name="StepGroup" column="StepGroup" type="string" />
+		<property name="ParentKey" column="ParentKey" type="string" />
+		<property name="ChildKey" column="ChildKey" type="string" />
+		<property name="ConfigExecute" column="ConfigExecute" type="string" />
+		<dynamic-component insert="true" name="customProperties" optimistic-lock="true" unique="false" update="true">
+			<property name="LOB" column="LOB" type="string" />
+			<property name="Product" column="Product" type="string" />
+			<property name="CommonClaimRiskPropertyTitle" column="CommonClaimRiskPropertyTitle" type="string" />
+			<property name="ConfigInterruptionPeriodindays" column="ConfigInterruptionPeriodindays" type="boolean" />
+			<property name="InterruptionPeriodindays" column="InterruptionPeriodindays" type="string" />
+			<property name="ConfigLossContributionAmountUtilitiesPower" column="ConfigLossContributionAmountUtilitiesPower" type="boolean" />
+			<property name="LossContributionAmountUtilitiesPower" column="LossContributionAmountUtilitiesPower" type="string" />
+			<property name="ConfigLossContributionAmountUtilitiesWater" column="ConfigLossContributionAmountUtilitiesWater" type="boolean" />
+			<property name="LossContributionAmountUtilitiesWater" column="LossContributionAmountUtilitiesWater" type="string" />
+			<property name="ConfigLossContributionAmountUtilitiesGas" column="ConfigLossContributionAmountUtilitiesGas" type="boolean" />
+			<property name="LossContributionAmountUtilitiesGas" column="LossContributionAmountUtilitiesGas" type="string" />
+			<property name="ConfigLossContributionAmountUtilitiesAir" column="ConfigLossContributionAmountUtilitiesAir" type="boolean" />
+			<property name="LossContributionAmountUtilitiesAir" column="LossContributionAmountUtilitiesAir" type="string" />
+			<property name="ConfigLossContributionAmountUtilitiesSteam" column="ConfigLossContributionAmountUtilitiesSteam" type="boolean" />
+			<property name="LossContributionAmountUtilitiesSteam" column="LossContributionAmountUtilitiesSteam" type="string" />
+			<property name="ConfigLossContributionAmountUtilitiesSuPPlierExtension" column="ConfigLossContributionAmountUtilitiesSuPPlierExtension" type="boolean" />
+			<property name="LossContributionAmountUtilitiesSuPPlierExtension" column="LossContributionAmountUtilitiesSuPPlierExtension" type="string" />
+			<property name="ConfigLossContributionAmountUtilitiesCustomersExtension" column="ConfigLossContributionAmountUtilitiesCustomersExtension" type="boolean" />
+			<property name="LossContributionAmountUtilitiesCustomersExtension" column="LossContributionAmountUtilitiesCustomersExtension" type="string" />
+			<property name="ConfigLossContributionAmountUtilitiesEarthquake" column="ConfigLossContributionAmountUtilitiesEarthquake" type="boolean" />
+			<property name="LossContributionAmountUtilitiesEarthquake" column="LossContributionAmountUtilitiesEarthquake" type="string" />
+			<property name="ConfigLossContributionAmountUtilitiessPoilageofClcover" column="ConfigLossContributionAmountUtilitiessPoilageofClcover" type="boolean" />
+			<property name="LossContributionAmountUtilitiessPoilageofClcover" column="LossContributionAmountUtilitiessPoilageofClcover" type="string" />
+			<property name="ConfigLossContributionAmountUtiLitiesStorageLocationoutsidemanufacturingPremises" column="ConfigLossContributionAmountUtiLitiesStorageLocationoutsidemanufacturingPremises" type="boolean" />
+			<property name="LossContributionAmountUtiLitiesStorageLocationoutsidemanufacturingPremises" column="LossContributionAmountUtiLitiesStorageLocationoutsidemanufacturingPremises" type="string" />
+			<property name="ConfigLossContributionAmountUtiLitiesanyother" column="ConfigLossContributionAmountUtiLitiesanyother" type="boolean" />
+			<property name="LossContributionAmountUtiLitiesanyother" column="LossContributionAmountUtiLitiesanyother" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesPower" column="ConfigLossContributionPercentageUtiLitiesPower" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesPower" column="LossContributionPercentageUtiLitiesPower" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesWater" column="ConfigLossContributionPercentageUtiLitiesWater" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesWater" column="LossContributionPercentageUtiLitiesWater" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesGas" column="ConfigLossContributionPercentageUtiLitiesGas" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesGas" column="LossContributionPercentageUtiLitiesGas" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesAir" column="ConfigLossContributionPercentageUtiLitiesAir" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesAir" column="LossContributionPercentageUtiLitiesAir" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesSteam" column="ConfigLossContributionPercentageUtiLitiesSteam" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesSteam" column="LossContributionPercentageUtiLitiesSteam" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesSuPPLierExtension" column="ConfigLossContributionPercentageUtiLitiesSuPPLierExtension" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesSuPPLierExtension" column="LossContributionPercentageUtiLitiesSuPPLierExtension" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesCustomerExtension" column="ConfigLossContributionPercentageUtiLitiesCustomerExtension" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesCustomerExtension" column="LossContributionPercentageUtiLitiesCustomerExtension" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesEarthquake" column="ConfigLossContributionPercentageUtiLitiesEarthquake" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesEarthquake" column="LossContributionPercentageUtiLitiesEarthquake" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesForCLCover" column="ConfigLossContributionPercentageUtiLitiesForCLCover" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesForCLCover" column="LossContributionPercentageUtiLitiesForCLCover" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesStorageLocation" column="ConfigLossContributionPercentageUtiLitiesStorageLocation" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesStorageLocation" column="LossContributionPercentageUtiLitiesStorageLocation" type="string" />
+			<property name="ConfigLossContributionPercentageUtiLitiesAnyother" column="ConfigLossContributionPercentageUtiLitiesAnyother" type="boolean" />
+			<property name="LossContributionPercentageUtiLitiesAnyother" column="LossContributionPercentageUtiLitiesAnyother" type="string" />
+			<property name="ConfigTimeExcessInDays" column="ConfigTimeExcessInDays" type="boolean" />
+			<property name="TimeExcessInDays" column="TimeExcessInDays" type="string" />
+			<property name="ConfigForwardButton" column="ConfigForwardButton" type="boolean" />
+			<property name="ConfigPreviousButton" column="ConfigPreviousButton" type="boolean" />
+			<property name="ConfigBackButton" column="ConfigBackButton" type="boolean" />
+			<property name="ConfigClaimTab" column="ConfigClaimTab" type="boolean" />
+			<property name="ConfigInsuredItemTab" column="ConfigInsuredItemTab" type="boolean" />
+			<property name="ConfigDocumentTab" column="ConfigDocumentTab" type="boolean" />
+			<property name="ConfigPartiesTab" column="ConfigPartiesTab" type="boolean" />
+			<property name="ConfigReserveTab" column="ConfigReserveTab" type="boolean" />
+			<property name="ConfigPaymentTab" column="ConfigPaymentTab" type="boolean" />
+			<property name="ConfigAttributesTab" column="ConfigAttributesTab" type="boolean" />
+			<property name="ConfigInsuredItemDetailsTab" column="ConfigInsuredItemDetailsTab" type="boolean" />
+			<property name="ConfigInsuredItemAttributeTab" column="ConfigInsuredItemAttributeTab" type="boolean" />
+			<property name="ConfigSaveButton" column="ConfigSaveButton" type="boolean" />
+		</dynamic-component>
+	</class>
+</hibernate-mapping>

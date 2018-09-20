@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="com.aqm.staf.framework.core.exceptions.ElementNotFoundException"/>
+<fullyQualifiedTypeName name="com.aqm.staf.framework.core.scenarioResult.DBResultUpdater"/>
+<fullyQualifiedTypeName name="com.aqm.staf.framework.core.scenarioResult.ScenarioExecutionList"/>
+<fullyQualifiedTypeName name="org.apache.xalan.trace.GenerateEvent"/>
+<fullyQualifiedTypeName name="com.aqm.staf.library.databin.GenericEntity"/>
+<fullyQualifiedTypeName name="com.aqm.staf.framework.core.scenarioResult.ScenarioResultObject"/>
+<fullyQualifiedTypeName name="com.aqm.staf.framework.FrameworkServices"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+</qualifiedTypeNameHistroy>
